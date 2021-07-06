@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Simon Game</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="button-container">
+        <div class="button-group">
+          <button
+            v-for="(button, index) in buttons"
+            :index="index"
+            ref="button"
+            :class="[btn, button]"
+            @click="clickHandler(index)"
+          ></button>
+        </div>
+      </div>
+      <div class="game-settings-container">
+        <button class="btn-play" @click="startGame">Play!</button>
+        <p class="round-text">Раунд: {{round}}</p>
+        <p>Уровень сложности:</p>
+        <div class="level-radio">
+          <input type="radio" value="easy" v-model="difficultyLevel" />
+          <label>Легкий</label>
+        </div>
+        <div class="level-radio">
+          <input type="radio" value="normal" v-model="difficultyLevel" />
+          <label>Средний</label>
+        </div>
+        <div class="level-radio">
+          <input type="radio" value="hard" v-model="difficultyLevel" />
+          <label>Сложный</label>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/vue.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

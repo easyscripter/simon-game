@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.green {
+    background-color: #7fba00;
+    box-shadow: 0 0 0 1px #7fba00 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #638f05, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.blue {
+    background-color: #00a4ef;
+    box-shadow: 0 0 0 1px #00a4ef inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #0883bc, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.yellow {
+    background-color: #ffb900;
+    box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #c28e07, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.red {
+    background-color: #f25022;
+    box-shadow: 0 0 0 1px #f25022 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #c93a12, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.illumination {
+    border: 5px solid rgba(125, 5, 141, 0.8)
+}
+
+.game-settings-container {
+    margin-top: 30px;
+}
+
+.btn-play {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #c28e07;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+
+.round-text {
+    margin-bottom: 10px;
+}
+
+.btn-clicked {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
+    -moz-transform: translatey(3px);
+    /* Для Firefox */
+    -ms-transform: translatey(3px);
+    /* Для IE */
+    -webkit-transform: translatey(3px);
+    /* Для Safari, Chrome, iOS */
+    -o-transform: translatey(3px);
+    /* Для Opera */
+    transform: translatey(3px);
+}
